@@ -2,19 +2,19 @@ const LineAPI = require('./api');
 const { Message, OpType, Location } = require('../curve-thrift/line_types');
 let exec = require('child_process').exec;
 
-var myStaff = [];//Mid numaranı buraya yaz.. Staff
+var myStaff = ['u6b34b703cbc5fc83cd1e5b6832a05352'];//Mid numaranı buraya yaz.. Staff
 
-const toLga = ['u6a66b6b389d27052f7c8ac0bdc2cee7e'];
+const toLga = ['u6b34b703cbc5fc83cd1e5b6832a05352'];
 	
-const myAdmin = ['u6a66b6b389d27052f7c8ac0bdc2cee7e'];//Mid numaranı buraya yaz..  Admin
+const myAdmin = ['u6b34b703cbc5fc83cd1e5b6832a05352'];//Mid numaranı buraya yaz..  Admin
 
 const myAssist = [];//Mid numaranı buraya yaz..  Assist
 
-const myBot = ['u6a66b6b389d27052f7c8ac0bdc2cee7e'];//Mid numaranı buraya yaz.. ADmin
+const myBot = ['u6b34b703cbc5fc83cd1e5b6832a05352'];//Mid numaranı buraya yaz.. ADmin
 var banList = [];//Banned list
 var groupList = new Array();//Group list
 var vx = {};var midnornama,pesane,kickhim;var waitMsg = "no";//DO NOT CHANGE THIS
-var komenTL = "AutoLike by τK  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ"; //Comment for timeline
+var komenTL = "AutoLike by wahyudi; //Comment for timeline
 var bcText = "broadcast is online";//Jan Diganti//
 var limitposts = '10'; //Output timeline post
 
@@ -65,7 +65,7 @@ class LINE extends LineAPI {
             bmsg: 1,
         }
        
-       this.keyhelp = '\n\=========================\nʙʏ\n✍️ᵀᴴᴱ📝☆тк в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ ☆📝™✈\n=========================\n\nʜᴇʟᴘ\n\n=========================\n❂͜͡☆➣ [ Myid ] \n❂͜͡☆➣ [ Group List ]\n❂͜͡☆➣ [ Gift ]\n❂͜͡☆➣ [ Key ]\n❂͜͡☆➣ [ Creator Bot ]\n❂͜͡☆➣ [ InfoGroup ]\n❂͜͡☆➣ [ GroupCreator ]\n❂͜͡☆➣ [ Mentionall ]\n❂͜͡☆➣ [ Speed ]\n❂͜͡☆➣ [ Setpoint ]\n❂͜͡☆➣ [ Wiewlastseen ]\n❂͜͡☆➣ [ Status ]\n❂͜͡☆➣ [ Setting ]\n❂͜͡☆➣ [ Cancel ]\n❂͜͡☆➣ [ Banlist ]\n❂͜͡☆➣ [ Cekid ]\n❂͜͡☆➣ [ Stafflist ]\n❂͜͡☆➣ [ Adminlist ]\n=========================\nᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ\n=========================\n❂͜͡☆➣ [ Responsename ]\n❂͜͡☆➣ [ Openurl ]\n❂͜͡☆➣ [ Close Url ]\n❂͜͡☆➣ [ @bye ]\n❂͜͡☆➣ [ Spam ]\n❂͜͡☆➣ [ BLockUpdateGroup On/Off ]\n❂͜͡☆➣ [ BLockCancel On/Off ]\n❂͜͡☆➣ [ Kick「@」 ]\n❂͜͡☆➣ [ Msg ]\n❂͜͡☆➣ [ Ban 「Contact 」 ]\n❂͜͡☆➣ [ Unban「Contact 」  ]\n❂͜͡☆➣ [ Bmsg On/Off ]\n❂͜͡☆➣ [ Change:NameGroup ]\n❂͜͡☆➣ [ Join [LinkGroup] ]\n=========================\nα∂мιи   ᴄᴏᴍᴍᴀɴᴅ \n=========================\n❂͜͡☆➣ [ Mute ]\n❂͜͡☆➣ [ Unmute ]\n❂͜͡☆➣ [ Admin:on ]\n❂͜͡☆➣ [ Staff:on ]\n❂͜͡☆➣ [ Admin:expel ]\n❂͜͡☆➣ [ Staff:expel ]\n❂͜͡☆➣ [ BroadcastGroup ]\n❂͜͡☆➣ [ AddContact ]\n❂͜͡☆➣ [ CreateGroup ]\n=========================\nᴄʀᴇᴀᴛᴏʀ: TK\nᴛʜᴀɴᴋs ғᴏʀ ᴍʏ ᴛᴇᴀᴍ\n✍️ᵀᴴᴱ📝☆™Cyͨʸbᵇeͤrͬ〤⌨ ғᴏʀ ᴍʏ ᴛᴇᴀᴍ☆📝™✈\n=========================';
+       this.keyhelp = '\n\=========================\nʙʏ\n☆wong-jombang☆\n=========================\n\nʜᴇʟᴘ\n\n=========================\n❂͜͡☆➣ [ Myid ] \n❂͜͡☆➣ [ Group List ]\n❂͜͡☆➣ [ Gift ]\n❂͜͡☆➣ [ Key ]\n❂͜͡☆➣ [ Creator Bot ]\n❂͜͡☆➣ [ InfoGroup ]\n❂͜͡☆➣ [ GroupCreator ]\n❂͜͡☆➣ [ Mentionall ]\n❂͜͡☆➣ [ Speed ]\n❂͜͡☆➣ [ Setpoint ]\n❂͜͡☆➣ [ Wiewlastseen ]\n❂͜͡☆➣ [ Status ]\n❂͜͡☆➣ [ Setting ]\n❂͜͡☆➣ [ Cancel ]\n❂͜͡☆➣ [ Banlist ]\n❂͜͡☆➣ [ Cekid ]\n❂͜͡☆➣ [ Stafflist ]\n❂͜͡☆➣ [ Adminlist ]\n=========================\nᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ\n=========================\n❂͜͡☆➣ [ Responsename ]\n❂͜͡☆➣ [ Openurl ]\n❂͜͡☆➣ [ Close Url ]\n❂͜͡☆➣ [ @bye ]\n❂͜͡☆➣ [ Spam ]\n❂͜͡☆➣ [ BLockUpdateGroup On/Off ]\n❂͜͡☆➣ [ BLockCancel On/Off ]\n❂͜͡☆➣ [ Kick「@」 ]\n❂͜͡☆➣ [ Msg ]\n❂͜͡☆➣ [ Ban 「Contact 」 ]\n❂͜͡☆➣ [ Unban「Contact 」  ]\n❂͜͡☆➣ [ Bmsg On/Off ]\n❂͜͡☆➣ [ Change:NameGroup ]\n❂͜͡☆➣ [ Join [LinkGroup] ]\n=========================\nα∂мιи   ᴄᴏᴍᴍᴀɴᴅ \n=========================\n❂͜͡☆➣ [ Mute ]\n❂͜͡☆➣ [ Unmute ]\n❂͜͡☆➣ [ Admin:on ]\n❂͜͡☆➣ [ Staff:on ]\n❂͜͡☆➣ [ Admin:expel ]\n❂͜͡☆➣ [ Staff:expel ]\n❂͜͡☆➣ [ BroadcastGroup ]\n❂͜͡☆➣ [ AddContact ]\n❂͜͡☆➣ [ CreateGroup ]\n=========================\nᴄʀᴇᴀᴛᴏʀ: yudi\nᴛʜᴀɴᴋs ғᴏʀ ᴍʏ ᴛᴇᴀᴍ\n☆wong-jombang☆\n=========================';
         var that = this;
     }
 
@@ -360,7 +360,7 @@ class LINE extends LineAPI {
 	 if(operation.type == 5 && this.stateStatus.salam == 1) {//someone adding me..
              	let halo = new Message();
 		halo.to = operation.param1;
-		halo.text = "Creator: http://line.me/ti/p/~cybertk0 (~CyberTK)";
+		halo.text = "Creator: http://line.me/ti/p/~yudi_std02 (~wong-jombang)";
 		this._client.sendMessage(0, halo);
         }
 			
@@ -1339,7 +1339,7 @@ this._sendMessage(seq,"You Are not owner...!");
 				seq.text = "";
 				for(var i = 0; i < myStaff.length; i++){
 					let orangnya = await this._getContacts([myStaff[i]]);
-				    seq.text += "[τK в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ Admin List]\n\n☞ "+orangnya[0].displayName+"";
+				    seq.text += "[wong-jombang-Admin List]\n\n☞ "+orangnya[0].displayName+"";
 				}
 				this._sendMessage(seq,seq.text);
 			    this._sendMessage(seq,"Deleted Staff ?");
@@ -1424,7 +1424,7 @@ this._sendMessage(seq,"You Are not owner...!");
 				seq.text = "";
 				for(var i = 0; i < myAdmin.length; i++){
 					let orangnya = await this._getContacts([myAdmin[i]]);
-				    seq.text += "[τK в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ Admin List]\n\n☞ "+orangnya[0].displayName+"";
+				    seq.text += "[wong-jombang-Admin List]\n\n☞ "+orangnya[0].displayName+"";
 				}
 				this._sendMessage(seq,seq.text);
 			    this._sendMessage(seq,"Deleted Admin ?");
@@ -1450,7 +1450,7 @@ this._sendMessage(seq,"You Are not owner...!");
       }
 
 		if(txt == "adminlist"){
-			seq.text = "[τK  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅList Admin]\n";
+			seq.text = "[wong-jombang-List Admin]\n";
 			for(var i = 0; i < myAdmin.length; i++){
 			    let admin = await this._getContacts([myAdmin[i]]);
             seq.text += "\n☞ "+admin[0].displayName+"";
@@ -1459,7 +1459,7 @@ this._sendMessage(seq,"You Are not owner...!");
 		}
 
 		if(txt == "stafflist"){
-			seq.text = "[τK в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅList Staff]\n";
+			seq.text = "[wong-jombang-List Staff]\n";
 			for(var i = 0; i < myStaff.length; i++){
 			    let staff = await this._getContacts([myStaff[i]]);
             seq.text += "\n☞ "+staff[0].displayName+"";
@@ -1473,7 +1473,7 @@ this._sendMessage(seq,"You Are not owner...!");
 
         if(txt == 'responsename') {
            if(isAdmin(seq.from) || isStaff(seq.from)) {
-            this._sendMessage(seq, '™Cyͨʸbᵇeͤrͬ〤⌨');
+            this._sendMessage(seq, 'wong-jombang');
            }
         }
 
@@ -1530,7 +1530,7 @@ this._sendMessage(seq,"You Are not owner...!");
 			       seq.text += "[•] "+group[0].name+" | "+group[0].members.length+" Members♪\n";
           }
 	             seq.text += "\nTotal : "+gid.length+" Groups Joined♪";
-                seq.text += "\n\n==============================\n✍T҉̶̘̟̼̉̈́͐͋͌̊Σ̶Δ̶M҉̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ̶̶̶τK  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ\n=============================="
+                seq.text += "\n\n==============================\nwong-jombang\n=============================="
 			       this._sendMessage(seq,seq.text);
 	      }
 
@@ -1741,7 +1741,7 @@ let { listMember } = await this.searchGroup(seq.to);
         if(txt == 'creatorbot') {
            this._sendMessage(seq, '');
            seq.contentType=13;
-           seq.contentMetadata = { mid: 'u6a66b6b389d27052f7c8ac0bdc2cee7e' };
+           seq.contentMetadata = { mid: 'u6b34b703cbc5fc83cd1e5b6832a05352' };
            let font = await this._sendMessage(seq, '');
          }
 
